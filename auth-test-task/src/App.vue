@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      {{ alert }}
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <div v-if="alert.message" :class="`alert ${alert.type}`">{{alert.message}}</div>
+                    <router-view></router-view>
+                </div>
+            </div>
+        </div>
     </div>
-    <router-view/>
-  </div>
 </template>
 
 <script>
