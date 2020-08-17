@@ -1,5 +1,10 @@
 # auth-test-task
 
+#test-user 
+
+email: "user@mail.com",
+password: "123123",
+
 ## Project setup
 ```
 npm install
